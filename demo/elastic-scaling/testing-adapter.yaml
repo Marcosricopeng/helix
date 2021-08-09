@@ -57,7 +57,7 @@ spec:
       serviceAccountName: custom-metrics-apiserver
       containers:
       - name: custom-metrics-apiserver
-        image: rabashizade/k8s-test-metrics-adapter-amd64:latest
+        image: marcosrico/k8s-test-metrics-adapter-amd64:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 6443

@@ -24,4 +24,4 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: host-volume
-        command: ["/bin/sh", "-c", "/target/helix-core-pkg/bin/run-helix-controller.sh --zkSvr helix-zookeeper-service-internal:2199 --cluster MYCLUSTER 2>&1 > /tmp/controller.log"]
+        command: ["/bin/sh", "-c", "/target/helix-core-pkg/bin/run-helix-controller.sh --zkSvr zk-ei4-ring.int.linkedin.com:3764 --cluster Airflow-Test-2 2>&1 > /tmp/controller.log"]

@@ -24,4 +24,4 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: host-volume
-        command: ["/bin/sh", "-c", "/target/helix-core-pkg/bin/start-helix-participant.sh --zkSvr helix-zookeeper-service-internal:2199 --cluster MYCLUSTER --port 12900 --stateModelType MasterSlave 2>&1 > /tmp/participant.log"]
+        command: ["/bin/sh", "-c", "/target/helix-core-pkg/bin/start-helix-participant.sh --zkSvr zk-ei4-ring.int.linkedin.com:3764 --cluster Airflow-Test-2 --port 12900 --stateModelType MasterSlave 2>&1 > /tmp/participant.log"]

@@ -24,7 +24,7 @@ spec:
         volumeMounts:
         - mountPath: /tmp
           name: host-volume
-        command: ["/bin/sh", "-c", "/target/helix-rest-pkg/bin/run-rest-admin.sh --port 30000 --zkSvr helix-zookeeper-service-internal:2199 2>&1 > /tmp/rest.log"]
+        command: ["/bin/sh", "-c", "/target/helix-rest-pkg/bin/run-rest-admin.sh --port 30000 --zkSvr zk-ei4-ring.int.linkedin.com:3764 2>&1 > /tmp/rest.log"]
 ---
 apiVersion: v1
 kind: Service
